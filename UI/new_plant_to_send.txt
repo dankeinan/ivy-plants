@@ -1,0 +1,5 @@
+var UserID = data?.email; // user email
+var plantName = data?.plantName; // user name
+var plantSpecies = data?.plantSpecies; // computer vision response
+var plantPic = data?.plantImage; // base64 string
+var SensorsID = data?.sensorID; // string

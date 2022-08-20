@@ -1,0 +1,56 @@
+{
+	"userInfo": {
+		"name": "Dan Keinan",
+		"email": "dankeinan@mail.tau.ac.il",
+	},
+	"plantsList": [
+		{
+			"id": "1",
+			"name": "Lily",
+			"imageURL": "https://picsum.photos/200",
+			"deviceNumber": "123456789",
+			"relatedNotifications": [
+				{
+					"timestamp": "1/5/22 13:30",
+					"message": "Irrigate your plant, please"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"name": "Orchid",
+			"imageURL": "https://picsum.photos/200",
+			"deviceNumber": "987654321",
+			"relatedNotifications": [
+				{
+					"timestamp": "2/5/22 10:30",
+					"message": "Irrigate your plant, please"
+				},
+				{
+					"timestamp": "28/4/22 19:00",
+					"message": "Irrigate your plant, please"
+				}
+			]
+		},
+		{
+			"id": "3",
+			"name": "Mint",
+			"imageURL": "https://picsum.photos/200",
+			"deviceNumber": "123412341",
+			"relatedNotifications": [
+				{
+					"timestamp": "28/4/22 12:00",
+					"message": "Irrigate your plant, please"
+				},
+				{
+					"timestamp": "1/3/22 13:30",
+					"message": "Irrigate your plant, please"
+				},
+				{
+					"timestamp": "27/2/22 17:15",
+					"message": "Irrigate your plant, please"
+				}
+			]
+		},
+	]
+}

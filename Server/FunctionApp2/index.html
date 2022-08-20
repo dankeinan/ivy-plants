@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>web page :</h1>
+    <h2 id="sign33">?</h2>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@aspnet/signalr@1.1.2/dist/browser/signalr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
+    <script>
+
+        const apiBaseUrl = window.location.origin;
+        console.log(apiBaseUrl);
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl(apiBaseUrl+'/api')
+            .build();
+        connection.on('nadavshtein@gmail.com', onNewMessage);
+        //connection.on('newConnection', onNewConnection)
+        const div = document.getElementById('sign33');
+        div.innerHTML="_____";
+
+        function onNewMessage(param) {
+            div.innerHTML=param;
+        }
+
+        connection.start()
+            .then(() => data.ready = true)
+            .catch(console.error);
+
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        async function myfunc() {
+            const Http = new XMLHttpRequest();
+            const apiBaseUrl = window.location.origin;
+            const url = '/api/GetCounter';
+            fetch(url)
+                .then(response => response.json())
+                .then(function (data) {
+                    let count = parseInt(data["counter"]) + 1;
+                    count = '' + count;
+                    const url2 = '/api/newupdate?value=' + count;
+                    fetch(url2);
+
+
+                });
+
+
+
+
+            //Http.open("GET", url2);
+            //Http.send();
+        }
+
+
+    </script>
+
+    <button onclick="myfunc()">
+        counter1+
+    </button>
+
+</body>
+</html>

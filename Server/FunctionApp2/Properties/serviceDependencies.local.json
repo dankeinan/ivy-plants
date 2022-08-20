@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "storage1": {
+      "secretStore": null,
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/storageaccountdnd",
+      "type": "storage.azure",
+      "connectionId": "DefaultEndpointsProtocol=https;AccountName=storageaccountdnd;AccountKey=azlF87V+w77xIHjmnqohQxqMdJUArE8cRQxRh9rn0pSwySZr2wwUfhHOdbvUVzJbUEYoj9e7FfJt+AStqNW6Nw==;EndpointSuffix=core.windows.net"
+    }
+  }
+}

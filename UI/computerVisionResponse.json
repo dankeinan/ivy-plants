@@ -1,0 +1,14 @@
+Object {
+  "confirmed": false,
+  "id": 284608801,
+  "plant_details": Object {
+    "language": "en",
+    "scientific_name": "Zamioculcas zamiifolia",
+    "structured_name": Object {
+      "genus": "zamioculcas",
+      "species": "zamiifolia",
+    },
+  },
+  "plant_name": "Zamioculcas zamiifolia",
+  "probability": 0.9686638261152786,
+}

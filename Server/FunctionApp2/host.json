@@ -1,0 +1,25 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    }
+  },
+  "Values": {
+    "AzureSignalRConnectionString": "Endpoint=https://signalr-dnd.service.signalr.net;AccessKey=JxaPq0sTNncGw68YLrrN744Isf8Jx8np1oTOkxAT4dI=;Version=1.0;"
+  },
+  "openApi": {
+    "info": {
+      "version": "1.0.0",
+      "title": "FunctionApp",
+      "description": "",
+      "license": {
+        "name": "MIT",
+        "url" : "http://opensource.org/licenses/MIT"
+      }
+    }
+  }
+}
